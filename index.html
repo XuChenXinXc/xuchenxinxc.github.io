@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AIGC Lab — AI · Agents · Automation</title>
+  <meta name="description" content="AIGC Lab — AI、Agents、自动化与实验项目。">
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI",
+                   "PingFang SC", "Microsoft YaHei", sans-serif;
+      background: #09090b;
+      color: #f4f4f5;
+      min-height: 100vh;
+    }
+
+    .container {
+      width: min(1100px, calc(100% - 40px));
+      margin: 0 auto;
+    }
+
+    nav {
+      height: 76px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .logo {
+      font-size: 20px;
+      font-weight: 700;
+      letter-spacing: -0.5px;
+    }
+
+    .logo span {
+      color: #a1a1aa;
+    }
+
+    .nav-link {
+      color: #a1a1aa;
+      text-decoration: none;
+      font-size: 14px;
+    }
+
+    .hero {
+      min-height: 620px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding: 70px 0 100px;
+    }
+
+    .tag {
+      display: inline-flex;
+      width: fit-content;
+      padding: 7px 12px;
+      border: 1px solid #27272a;
+      border-radius: 999px;
+      color: #a1a1aa;
+      font-size: 13px;
+      margin-bottom: 26px;
+      background: #111113;
+    }
+
+    h1 {
+      max-width: 850px;
+      font-size: clamp(48px, 8vw, 92px);
+      line-height: 0.98;
+      letter-spacing: -5px;
+      margin-bottom: 28px;
+    }
+
+    .gradient {
+      background: linear-gradient(90deg, #ffffff, #a1a1aa);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    .description {
+      max-width: 650px;
+      color: #a1a1aa;
+      font-size: 18px;
+      line-height: 1.8;
+      margin-bottom: 38px;
+    }
+
+    .buttons {
+      display: flex;
+      gap: 12px;
+      flex-wrap: wrap;
+    }
+
+    .button {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      padding: 13px 20px;
+      border-radius: 10px;
+      text-decoration: none;
+      font-size: 14px;
+      font-weight: 600;
+      transition: 0.2s;
+    }
+
+    .primary {
+      background: #f4f4f5;
+      color: #09090b;
+    }
+
+    .secondary {
+      border: 1px solid #27272a;
+      color: #f4f4f5;
+      background: #111113;
+    }
+
+    .button:hover {
+      transform: translateY(-2px);
+    }
+
+    .section {
+      padding: 30px 0 100px;
+    }
+
+    .section-title {
+      font-size: 14px;
+      color: #71717a;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      margin-bottom: 25px;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 14px;
+    }
+
+    .card {
+      border: 1px solid #27272a;
+      border-radius: 16px;
+      padding: 28px;
+      background: #0f0f11;
+      min-height: 180px;
+      transition: 0.2s;
+    }
+
+    .card:hover {
+      border-color: #52525b;
+      transform: translateY(-3px);
+    }
+
+    .card h3 {
+      font-size: 20px;
+      margin-bottom: 12px;
+    }
+
+    .card p {
+      color: #71717a;
+      line-height: 1.7;
+      font-size: 14px;
+    }
+
+    footer {
+      border-top: 1px solid #18181b;
+      padding: 28px 0;
+      color: #52525b;
+      font-size: 13px;
+    }
+
+    @media (max-width: 700px) {
+      .container {
+        width: min(100% - 28px, 1100px);
+      }
+
+      nav {
+        height: 65px;
+      }
+
+      .hero {
+        min-height: auto;
+        padding: 90px 0 90px;
+      }
+
+      h1 {
+        letter-spacing: -3px;
+      }
+
+      .description {
+        font-size: 16px;
+      }
+
+      .grid {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="container">
+
+    <nav>
+      <div class="logo">
+        AIGC<span> Lab</span>
+      </div>
+
+      <a class="nav-link" href="https://aichenxin.store" target="_blank">
+        AI Tools ↗
+      </a>
+    </nav>
+
+    <main>
+
+      <section class="hero">
+        <div class="tag">AI · Agents · Automation</div>
+
+        <h1>
+          Explore the<br>
+          <span class="gradient">AI Frontier.</span>
+        </h1>
+
+        <p class="description">
+          AIGC Lab 是一个专注于人工智能、Agent、自动化与开发实验的个人实验室。
+          在这里探索新的模型、工具与工作流。
+        </p>
+
+        <div class="buttons">
+          <a class="button primary" href="#projects">
+            Explore Projects
+          </a>
+
+          <a class="button secondary"
+             href="https://aichenxin.store"
+             target="_blank">
+            AI Tools ↗
+          </a>
+        </div>
+      </section>
+
+      <section class="section" id="projects">
+
+        <div class="section-title">
+          Projects
+        </div>
+
+        <div class="grid">
+
+          <div class="card">
+            <h3>AI Agents</h3>
+            <p>
+              多 Agent 协作、智能工作流与自动化 Agent 实验。
+            </p>
+          </div>
+
+          <div class="card">
+            <h3>AI Testing</h3>
+            <p>
+              探索 AI 在测试点分析、用例生成、自动化执行与日志分析中的应用。
+            </p>
+          </div>
+
+          <div class="card">
+            <h3>AI Tools</h3>
+            <p>
+              AI 工具、模型与 API 的实践与实验。
+            </p>
+          </div>
+
+          <div class="card">
+            <h3>Experiments</h3>
+            <p>
+              新模型、新技术以及各种 AI 工作流实验。
+            </p>
+          </div>
+
+        </div>
+      </section>
+
+    </main>
+
+    <footer>
+      © 2026 AIGC Lab. Built with curiosity.
+    </footer>
+
+  </div>
+
+</body>
+</html>
